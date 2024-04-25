@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/drawingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/drawCircleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Circle"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="drawCircle" />
+
+    <Button
+        android:id="@+id/drawEllipseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Ellipse"
+        android:layout_toEndOf="@+id/drawCircleButton"
+        android:layout_alignBaseline="@+id/drawCircleButton"
+        android:onClick="drawEllipse" />
+
+    <Button
+        android:id="@+id/drawRectangleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Rectangle"
+        android:layout_toEndOf="@+id/drawEllipseButton"
+        android:layout_alignBaseline="@+id/drawEllipseButton"
+        android:onClick="drawRectangle" />
+
+    <Button
+        android:id="@+id/drawTextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Draw Text"
+        android:layout_toEndOf="@+id/drawRectangleButton"
+        android:layout_alignBaseline="@+id/drawRectangleButton"
+        android:onClick="drawText" />
+</RelativeLayout>
